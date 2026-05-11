@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вокзалы Азербайджана | Главная</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">Solomon-Terminal</a></h1>
+        <nav>
+    <ul>
+                <li><a href="history.html">История</a></li>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="schedule.html">Табло рейсов</a></li>
+        <li><a href="info.html">Пассажирам</a></li>
+       
+    </ul>
+</nav>
+    </header>
+
+    <main>
+        <div class="card">
+            <h2>Поиск билетов</h2>
+            <p>Введите данные для поиска доступных направлений.</p>
+            <br>
+            <form id="searchForm">
+                <div class="form-group">
+                    <label for="departure">Откуда:</label>
+                    <input type="text" id="departure" placeholder="Например: Баку" required>
+                </div>
+                <div class="form-group">
+                    <label for="arrival">Куда:</label>
+                    <input type="text" id="arrival" placeholder="Например: Гянджа" required>
+                </div>
+                <div class="form-group">
+                    <label for="date">Дата поездки:</label>
+                    <input type="date" id="date" required>
+                </div>
+                <button type="submit">Найти билеты</button>
+            </form>
+            <div id="searchResult" style="margin-top: 1rem; font-weight: bold;"></div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>О сервисе</h4>
+                <p>Единая информационная система вокзалов Азербайджана.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Служба поддержки</h4>
+                <p>Телефон: <a href="tel:+994555272772" style="color: inherit;">+994 55 527 27 72</a></p>
+                <p>Email: <a href="mailto:slmn.bbyv@gmail.com" style="color: inherit;">slmn.bbyv@gmail.com</a></p>
+                <p>Адрес: <a href="https://maps.google.com/?q=Баку,Азербайджан" target="_blank" style="color: inherit;">г. Баку, Азербайджан</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Solomon-Terminal. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
